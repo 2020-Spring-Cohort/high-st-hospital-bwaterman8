@@ -5,11 +5,11 @@ public class Employee {
     int salary;
     boolean isPaid;
 
-    public Employee() {
-        this.employeeName = "";
-        this.employeeNumber = 0;
-        this.salary = 0;
-        this.isPaid = false;
+    public Employee(String employeeName, int employeeNumber, int salary, boolean isPaid) {
+        this.employeeName = employeeName;
+        this.employeeNumber = employeeNumber;
+        this.salary = salary;
+        this.isPaid = isPaid;
     }
 
     public int paySalary() {

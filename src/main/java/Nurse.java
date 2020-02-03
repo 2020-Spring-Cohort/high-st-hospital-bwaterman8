@@ -2,7 +2,7 @@ public class Nurse extends HealthProviders {
     private int numOfPatients;
 
     public Nurse(String employeeName, int employeeNumber, int salary, boolean isPaid, int numOfPatients) {
-        super ();
+        super (employeeName, employeeNumber, salary, isPaid);
         this.numOfPatients = 4;
     }
 

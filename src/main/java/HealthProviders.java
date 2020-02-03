@@ -1,6 +1,6 @@
 abstract class HealthProviders extends Employee {
-    public HealthProviders() {
-        super();
+    public HealthProviders(String employeeName, int employeeNumber, int salary, boolean isPaid) {
+        super(employeeName, employeeNumber, salary, isPaid);
     }
     public void drawBlood(Patient patientOne) {
         patientOne.decreaseBloodLevels(2);

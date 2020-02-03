@@ -2,7 +2,7 @@ public class Janitor extends Employee {
     private boolean isSweepingFloor;
 
     public Janitor(String employeeName, int employeeNumber, int salary, boolean isPaid, boolean isSweepingFloor) {
-        super();
+        super(employeeName, employeeNumber, salary, isPaid);
         this.isSweepingFloor = false;
     }
 

@@ -9,15 +9,15 @@ public class EmployeeTest {
     }
 
     @Test
-    public void shouldPaySalary () {
-        Employee underTest = new Employee();
+    public void shouldPaySalary(String employeeName, int employeeNumber, int salary, boolean isPaid) {
+        Employee underTest = new Employee(employeeName, employeeNumber, salary, isPaid);
         int result = underTest.paySalary();
         Assertions.assertEquals(0, result);
     }
 
     @Test
-    public void shouldSwitchIsPaid() {
-        Employee underTest = new Employee();
+    public void shouldSwitchIsPaid(String employeeName, int employeeNumber, int salary, boolean isPaid) {
+        Employee underTest = new Employee(employeeName, employeeNumber, salary, isPaid);
         boolean result = underTest.payChangeIsPaid();
         Assertions.assertTrue(true);
     }

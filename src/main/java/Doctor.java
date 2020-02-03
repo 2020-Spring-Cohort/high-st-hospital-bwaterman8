@@ -2,8 +2,8 @@ public class Doctor extends HealthProviders {
     private String specialty;
 
 public Doctor(String employeeName, int employeeNumber, int salary, boolean isPaid, String specialty) {
-    super();
-    this.specialty = "";
+    super(employeeName, employeeNumber, salary, isPaid);
+    this.specialty = specialty;
     }
 
     @Override
